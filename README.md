@@ -1,4 +1,4 @@
 # Personal-Website
 This is my Personal Website
 
-Link to main Page: https://vineetmankani.github.io/Personal-Website/web.html
+Link to Main Page: https://vineetmankani.github.io/Personal-Website/web.html
