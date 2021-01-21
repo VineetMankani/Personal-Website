@@ -17,7 +17,7 @@ body {
     width: auto;
     height: auto;
     /* margin: 50px; */
-    background-image: url(../Media/blue\ bg.jpg);
+    background-image: url(Media/blue\ bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
