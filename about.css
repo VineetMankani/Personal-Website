@@ -240,6 +240,7 @@ span.school {
 
 span.web-link {
     font-size: 17px;
+    word-wrap:break-word;
 }
 
 span.web-link a {
