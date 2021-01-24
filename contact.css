@@ -112,6 +112,21 @@ div.content {
     border-radius: 25px;
 }
 
+@media screen and (min-width: 450px) and (max-width: 600px) {
+    div.content {
+    width: 90%;
+    margin: 2.5% 5% 2.5% 5%;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 450px) {
+    div.content {
+    width: 95%;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    }
+}
+
+
 div.contact {
     position: relative;
     height: auto;
