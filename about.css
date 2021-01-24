@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 
 * {
     box-sizing: border-box;
@@ -34,7 +35,7 @@ body {
     bottom: 0;
 } */
 
-div.logo img {
+div.logo a img {
     position: absolute;
     margin: 15px 0px 0px 15px;
     height: 66px;
@@ -42,7 +43,7 @@ div.logo img {
     z-index: 5;
 }
 
-div.logo img:hover {
+div.logo a img:hover {
     border: 2px solid grey;
     border-radius: 33px;
 }
@@ -50,8 +51,8 @@ div.logo img:hover {
 #nav {
     position: absolute;
     float: right;
-    right: 30px;
-    top: 30px;
+    right: 25px;
+    top: 25px;
     z-index: 1;
 }
 
@@ -60,10 +61,10 @@ div.logo img:hover {
     font-size: 22px;
     font-family: cursive;
     font-weight: 500;
-    padding: 10px 18px 10px 18px ;
+    padding: 10px 15px 10px 15px ;
     border-radius: 15px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 #nav span a:hover {
@@ -71,6 +72,34 @@ div.logo img:hover {
     color: black;
     text-decoration: underline;
     /* border: 1px solid black; */
+}
+
+@media screen and (min-width:650px) and (max-width:800px) {
+    #nav span a {
+        padding: 5px 9px 5px 9px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:550px) and (max-width:650px) {
+    #nav span a {
+        padding: 3px 6px 3px 6px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #nav span a {
+        padding: 2px 4px 2px 4px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    #nav span a  {
+        padding: 10px 18px 10px 18px ;
+        font-size: 40px;
+    }
 }
 
 div.content{
@@ -87,15 +116,14 @@ div.content{
     /* margin: 30px; */
     border: 6px solid black;
     border-radius: 25px;
-    /* background-color: chartreuse; */
 }
 
 div.aboutme {
     position: relative;
     height: auto;
     width: 100%;
-    /* display: flex; */
     padding-top: 100px;
+    /* display: flex; */
     /* align-items: center;
     justify-content: center; */
 }
@@ -114,7 +142,6 @@ div.myimg {
     height: auto;
     width: auto;
     /* top: 225px; */
-    /* display: flex; */
     /* left: 50%; */
     /* transform: translateX(-73.5px) translateY(-40px); */
     /* padding-top: 250px; */
@@ -128,7 +155,8 @@ div.myimg img {
     position: relative;
     height: 150px;
     width: auto;
-    margin: 8px 8px 0px 8px;
+    /* border-radius: 50%; */
+    margin: 16px 8px 0px 8px;
     z-index: 5;
     /* align-items: center;
     justify-content: center; */
@@ -160,7 +188,7 @@ div.text div.lorem {
     position: relative;
     /* width: 100%; */
     height: fit-content;
-    padding: 20px 125px 20px 125px;
+    padding: 20px 120px 20px 120px;
     /* top: 200px; */
     text-align: left;
     /* font-family: 'Trebuchet MS'; */
@@ -168,22 +196,76 @@ div.text div.lorem {
 }
 
 span.title {
-    font-size: 20px;
-    font-weight: 900;
-    font-family: 'Trebuchet MS';
-    /* font-family: 'East-Sea-Dokdo'; */
-    text-decoration: underline;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding: 4px 12px 4px 12px;
+    border-radius: 18px;
+    background-color:white;
+    color: black;
+    /* letter-spacing: 1px; */
+    /* font-family: 'Hachi Maru Pop'; */
+    font-family: 'Potta One';
+    /* text-decoration: underline; */
 }
 
 span.school {
+    box-sizing: content-box; 
     font-size: 17px;
     font-weight: bold;
     font-family: 'Trebuchet MS';
+    /* padding: 4px 8px 4px 8px; */
+    /* border: 1px dotted black; */
+    /* border-radius: 10px; */
+    /* background-color: rgb(20,20,20); */
     color: rgb(200,200,200);
+    /* margin: 4px 0px 8px 0px; */
+    /* background-color:darkblue; */
     text-decoration: underline;
 }
 
 
+span.web-link {
+    font-size: 17px;
+}
+
+span.web-link a {
+    font-family: 'Trebuchet MS';
+    text-decoration: underline;
+
+}
+
+span.web-link a:hover {
+    text-decoration: none;
+
+}
+
+hr {
+    border: 1px dotted white;
+}
+
+@media screen and (min-width: 700px) and (max-width:800px) {
+    div.text div.lorem {
+        padding: 20px 80px 20px 80px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:700px) {
+    div.text div.lorem {
+        padding: 20px 60px 20px 60px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width:500px) {
+    div.text div.lorem {
+        padding: 20px 40px 20px 40px;
+    }
+}
+
+@media screen and (max-width:200px) {
+    div.text div.lorem {
+        padding: 20px 10px 20px 10px;
+    }
+}
 
 
 
@@ -222,7 +304,7 @@ div.links a:hover {
     transform: translateY(-10px);
 }
 
-div.links a img {
+div.links a img, div.links img {
     width: 20px;
 }
 

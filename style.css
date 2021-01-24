@@ -11,10 +11,10 @@
 body {
     width: auto;
     height: auto;
-    background-color: blue;
+    background-color: rgba(0,0,255,1);
     /* background-color: #03a9f4; */
     /* z-index: 10; */
-    /* mix-blend-mode: overlay; */
+    mix-blend-mode: overlay;
 }
 
 video { 
@@ -45,7 +45,7 @@ div.head {
     width: 100%;
     /* height: 100%; */
     /* align-items: center; */
-    top: 130px;
+    top: 30%;
     z-index: 5;
 }
 
@@ -58,6 +58,48 @@ div.head h1 {
     /* text-transform: uppercase; */
     /* font-family: 'Trebuchet MS'; */
 }
+
+
+@media screen and (max-width: 400px) {
+
+    div.head h1 {   
+        font-size: 90px;
+        line-height: 60px;
+        /* color: yellow; */
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+
+    div.head h1 {
+        font-size: 100px;
+        line-height: 80px;
+        /* color: yellow; */
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+
+    div.head h1 {
+        font-size: 100px;
+        line-height: 80px;
+        /* color: yellow; */
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+
+    div.head h1 {
+        font-size: 120px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    div.head h1 {
+        font-size: 180px;
+    }
+}
+
 
 /* div.me {
     position: absolute;
@@ -76,7 +118,7 @@ div.me img {
 #nav {
     position: absolute;
     float: right;
-    right: 15px;
+    right: 10px;
     top: 15px;
     z-index: 5;
 }
@@ -85,11 +127,12 @@ div.me img {
     text-decoration: none;
     color: black;
     font-size: 22px;
+    font-family: cursive;
     font-weight: 500;
-    padding: 10px 18px 10px 18px ;
+    padding: 10px 15px 10px 15px ;
     border-radius: 15px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 #nav span a:hover {
@@ -97,6 +140,35 @@ div.me img {
     text-decoration: underline;
     /* border: 1px solid black; */  
 }
+
+@media screen and (min-width:600px) and (max-width:700px) {
+    #nav span a {
+        padding: 5px 9px 5px 9px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:600px) {
+    #nav span a {
+        padding: 3px 6px 3px 6px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #nav span a {
+        padding: 2px 4px 2px 4px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    #nav span a  {
+        padding: 10px 18px 10px 18px ;
+        font-size: 40px;
+    }
+}
+
 
 div.foot {
     position: absolute;
@@ -150,3 +222,18 @@ div.copyright a:hover {
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+    footer div.foot {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    footer div.foot  {
+        font-size: 30px;
+    }
+    footer div.foot div.links a img {
+        height: 35px;
+        width: auto;
+    }
+}
