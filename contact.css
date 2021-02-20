@@ -217,14 +217,26 @@ hr {
     border: 1px dotted white;
 }
 
+p.finalcontact {
+    text-align: center;
+    /* padding: 0; */
+    padding: 0px 0 5px 0;
+    margin: 0;
+}
 
+p.mail {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0 10px 0;
+    margin: 0;
+}
 
-
-
-
-
-
-
+p.or {
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
 
 div.foot  {
     position: relative;
