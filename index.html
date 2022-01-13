@@ -42,7 +42,7 @@
                             src="Media/Instagram Logo.png" alt="Instagram"></a>
                     <a href="https://www.linkedin.com/in/vineet-mankani-8880841b8/" target="_blank"><img
                             src="Media/LinkedIn Logo.png" alt="LinkedIn"></a>
-                    <a href="https://www.youtube.com/channel/UC73vqP-XKlJ_A3v0nyLViTw" target="_blank"><img
+                    <a href="https://www.youtube.com/channel/UCIFZUwDG22ddKTZCp5uYImA" target="_blank"><img
                             src="Media/YouTube Logo.png" alt="YouTube"></a>
 
                 </div>
@@ -51,7 +51,15 @@
                 </div>
             </div>
         </footer>
-        <video src="Media/Beach Waves.mp4" muted autoplay loop></video>
+        <video src="" muted autoplay loop></video>
+
+    </section>
+
+    <script>
+        const video = document.querySelector('video');
+        let r = Math.floor(Math.random()*6)+1;
+        video.src = `Media/${r}.mp4`;
+    </script>
 
     </section>
 </body>
