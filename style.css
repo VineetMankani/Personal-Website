@@ -11,7 +11,7 @@
 body {
     width: auto;
     height: auto;
-    background-color: rgba(0,0,255,1);
+    /* background-color: rgba(0,0,255,1); */
     /* background-color: #03a9f4; */
     /* z-index: 10; */
     mix-blend-mode: overlay;
@@ -23,7 +23,7 @@ video {
     height: 100%;
     z-index: 0;
     object-fit: cover;
-    opacity: 0.9;
+    /* opacity: 0.9; */
 }
 
 div.logo img {
@@ -99,21 +99,6 @@ div.head h1 {
         font-size: 180px;
     }
 }
-
-
-/* div.me {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 45%;
-}
-div.me img {
-    position: absolute;
-    top: 50%;
-    height: 150px;
-    width: auto;
-    z-index: 5;
-} */
 
 #nav {
     position: absolute;
